@@ -24,6 +24,8 @@ function calc(){
     calculate = a * b;
   }
 
-  console.log(calculate);
+
+  // reacts to 'onclick from html biutton(32) -> displays the result on the webpage instead of console
+  document.querySelector("#result").innerHTML = calculate;
 
   }
