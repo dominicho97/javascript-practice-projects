@@ -24,6 +24,6 @@ function calc(){
     calculate = a * b;
   }
 
-
+  console.log(calculate);
 
   }
