@@ -35,8 +35,15 @@ cursor: pointer;
 }
 
 .nav-main ul li{
- 
+  list-style: none;       /* removes bullet points from ul*/
+  line-height: 60px;
 }
 
 .nav-main ul a{
+
+  display: block;
+  height: 100%;
+  padding: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;      /* removes underline in link*/
   }
