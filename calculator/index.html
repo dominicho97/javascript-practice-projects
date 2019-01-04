@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
 
-  <title> </title>
-  <meta name="description" content="The HTML5 Herald">
+  <title> Calculator</title>
+  <meta name="description" content="Calculator">
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="style.css">
@@ -19,17 +19,17 @@
 
 <form>
 
-  value 1: <input type="text">
-  value 2: <input type="text">
+  value 1: <input type="text" id="value1"> 
+  value 2: <input type="text" id="value2">
 
   operator:
-  <select>
+  <select id="operator">
     <option value="add">Add</option>
     <option value="min">Minus</option>
     <option value="div">Divide</option>
     <option value="mul">Multiply</option>
 
-
+    <button type="button">Calculate</button>
   </select>
 
 </form>
@@ -38,4 +38,5 @@
 
 
 </body>
+<script src="main.js"></script>
 </html>
