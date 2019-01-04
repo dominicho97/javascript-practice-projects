@@ -17,6 +17,12 @@ function calc(){
   } else if (op == "min"){
     calculate = a - b;
   }
+  else if (op == "div"){
+    calculate = a / b;
+  }
+  else if (op == "mul"){
+    calculate = a * b;
+  }
 
 
 
