@@ -10,7 +10,8 @@ let toggleNav = function(){
 
 
 if (toggleNavStatus === false){
-
+getSideBarUl.style.visibility = "visible";
+getSideBarTitle.style.width = "272px";
 }
 
 }
