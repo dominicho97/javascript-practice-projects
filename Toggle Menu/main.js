@@ -3,15 +3,22 @@
 let toggleNavStatus = false;
 
 let toggleNav = function(){
-  let getSideBar = document.querySelector(".nav-sidebar ");
-  let getSideBarUl = document.querySelector(".nav-sidebar ul");
-  let getSideBarTitle = document.querySelector(".nav-sidebar span");
-  let getSideBarLinks = document.querySelectorAll(".nav-sidebar a");
+  let getSidebar = document.querySelector(".nav-sidebar ");
+  let getSidebarUl = document.querySelector(".nav-sidebar ul");
+  let getSidebarTitle = document.querySelector(".nav-sidebar span");
+  let getSidebarLinks = document.querySelectorAll(".nav-sidebar a");
 
 
-if (toggleNavStatus === false){
-getSideBarUl.style.visibility = "visible";
-getSideBarTitle.style.width = "272px";
-}
+  if (toggleNavStatus === false){
+  getSidebarUl.style.visibility = "visible";
+  getSidebar.style.width = "272px";
+  getSidebarTitle.style.opacity = "0.5";
 
+
+  let arrayLength = getSidebarLinks.length;
+  for (let i = 0; i < arraylength; i++) {
+  getSidebarLinks[0].style.opacity = "1";
+      
+    }
+  }
 }
