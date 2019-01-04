@@ -26,7 +26,17 @@ background-repeat:no-repeat;
 background-size: 40%;
 background-position: center;
 cursor: pointer;
-
-
-
 }
+
+.nav-main ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+}
+
+.nav-main ul li{
+ 
+}
+
+.nav-main ul a{
+  }
