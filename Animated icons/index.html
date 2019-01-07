@@ -13,7 +13,7 @@
 
   <style>
 
-    #chain, #battery{
+    #chain, #battery,  #hourglass{
       font-size: 50px;
     }
   </style>
@@ -21,10 +21,15 @@
 </head>
 
 <body>
-  <div  id ="chain"class="fa"></div>
+  
+  <div  id ="chain"class="fa"></div> 
   
   <br> <br>
   <div  id ="battery"class="fa"></div>
+
+  <br> <br>
+  <div  id ="hourglass"class="fa"></div>
+
 
   <script>
   
@@ -37,15 +42,19 @@
     chain.innerHTML = "&#xf127;";
   }, 1000);
 
+
   
 
   //call animation
   brakeChain();
 
-
-
   //Animate every 2 seconds
   setInterval(brakeChain, 2000);
+
+
+
+
+
 
   //baterry charge animation
   function chargeBattery(){
@@ -75,10 +84,26 @@
   
   
   
+  //Hourglass tip animation
+  function hourglassTip(){
+    let hourglass = document.getElementById("hourglass");
+    hourglass.innerHTML = "&#xf251;";
+    setTimeout(function(){
+      hourglass.innerHTML = "&#xf252;";
+    }, 1000);
+    setTimeout(function(){
+      hourglass.innerHTML = "&#xf253;";
+    },2000);
+  }
   
+  //Run animation
+  hourglassTip();
   
-  
-  
+  // run animation every 3 seconds
+  setInterval(hourglassTip, 2000);
+
+
+
   </script>
 
 
