@@ -10,3 +10,7 @@ projects I make to learn javascript on my own.
 
 2019-01-06
 3 Game (unfinished)
+
+2019-01-07
+4 Simple slideshow
+5 Weight converter
