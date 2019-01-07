@@ -28,8 +28,15 @@ setPreFight: function() {
 
   let getHeader = documentquerySelector(".header");
   let getActions = documentquerySelector(".actions");
-  let getarena = documentquerySelector(".arena");
-  getHeader.innerHTML = '<p>Task: Find an enemy!</p>'
+  let getArena = documentquerySelector(".arena");
+  getHeader.innerHTML = '<p>Task: Find an enemy!</p>';
+  getActions.innerHTML = '<a href ="#" class = "btn-prefight" onclick= "Gamemanager.setFight()">Search for enemy</a>'
+  getArena.style.visibility = "visible";
 
+  }, 
+  setFight: function(){
+  let getHeader = documentquerySelector(".header");
+  let getActions = documentquerySelector(".actions");
+  let getErena = documentquerySelector(".arena");
   }
 }
