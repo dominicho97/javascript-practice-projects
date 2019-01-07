@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <div  id ="chain"class="fa fa-link"></div>
+  <div  id ="chain"class="fa"></div>
   
   </div>
 
@@ -29,11 +29,17 @@
   
   function brakeChain(){
     let chain = document.getElementById("chain")
-    chain.innerHTML = "&#xf0c1"; // bij de innerhtml plaatst men "&#x met daarna unicode van icon'f0c1' 
+    chain.innerHTML = "&#xf0c1;"; // bij de innerhtml plaatst men "&#x met daarna unicode van icon'f0c1' en nog een ; 
   }
   
+  setTimeout (function(){
+    chain.innerHTML = "&#127;";
+  }, 1000);
+
   
-  
+
+
+  brakeChain();
   </script>
 
 
