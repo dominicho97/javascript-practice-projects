@@ -33,13 +33,21 @@
   }
   
   setTimeout (function(){
-    chain.innerHTML = "&#127;";
+    chain.innerHTML = "&#xf127;";
   }, 1000);
 
   
 
-
+  //call animation
   brakeChain();
+
+
+
+  //Animate every 2 seconds
+  setInterval(brakeChain, 2000);
+
+
+
   </script>
 
 
