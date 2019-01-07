@@ -38,5 +38,10 @@ setPreFight: function() {
   let getHeader = documentquerySelector(".header");
   let getActions = documentquerySelector(".actions");
   let getErena = documentquerySelector(".arena");
+  //Create Enemy
+  let enemy00 = new Enemy("Goblin", 100,0,50,100);
+  let enemy00 = new Enemy("Troll", 200,0,150,100)
+
+  
   }
 }
