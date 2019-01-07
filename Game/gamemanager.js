@@ -21,10 +21,15 @@ let GameManager = {
         break;
     }
     let getInterface = document.querySelector(".interface");
-     getInterface.innerHTML = '<img src = "img/avatar-player/' + classType.toLowerCase() + '.png class="img-avatar" "><div><h3>' + classType
-      +'</h3><p>Health: ' + player.health + ' </p>' ;   
+     getInterface.innerHTML = '<img src="img/avatar-players/' + classType.toLowerCase() + '.jpg" class="img-avatar"><div><h3>' + classType
+      +'</h3><p>Health: '+ player.health + '</p><p>Mana: ' + player.mana + '</p><p>Agility: ' + player.agility+ '</p><p>Speed: ' + player.speed + '</p></div>' ;   
 },
 setPreFight: function() {
+
+  let getHeader = documentquerySelector(".header");
+  let getActions = documentquerySelector(".actions");
+  let getarena = documentquerySelector(".arena");
+  getHeader.innerHTML = '<p>Task: Find an enemy!</p>'
 
   }
 }
