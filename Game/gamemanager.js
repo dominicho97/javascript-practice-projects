@@ -40,8 +40,21 @@ setPreFight: function() {
   let getErena = documentquerySelector(".arena");
   //Create Enemy
   let enemy00 = new Enemy("Goblin", 100,0,50,100);
-  let enemy00 = new Enemy("Troll", 200,0,150,100)
+  let enemy01 = new Enemy("Troll", 200,0,150,100);
+  let chooseRandomEnemy = Math.floor(Math.random()*Math.floor(2));
+ switch (chooseRandomEnemy){
+  case 0:
+  enemy = enemy00;
+  break;
+  case 1:
+  enemy = enemy01;
+  break;
+ }
+ getHeader.innerHTML = '<p>Task: Choose your move</p>'
+ getActions.innerHTML =  '<a href ="#" class = "btn-prefight" onclick= "PlayerMoves.calcAttack()">Attack!</a>'
+ getEnemy.innerHTML = '';
 
-  
+
+
   }
 }
