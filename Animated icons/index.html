@@ -51,10 +51,13 @@
   function chargeBattery(){
     let battery = document.getElementById("battery");
     battery.innerHTML = "&#xf244;";
+  setTimeout(function(){
+   battery.innerHTML = "&#xf243;";
+    }, 1000);
     setTimeout(function(){
-  battery.innerHTML = "&#xf244;";
-    });
-  }
+   battery.innerHTML = "&#xf242;";
+    }, 2000);
+    }
 
   // Run Animation
    chargeBattery();
