@@ -13,4 +13,5 @@ projects I make to learn javascript on my own.
 
 2019-01-07
 4 Simple slideshow
-5 Weight converter
+5 Animated icons
+6 Weight converter
