@@ -15,6 +15,29 @@ class Book {
 // UI class: Handle UI Tasks
 
 
+class UI{
+  static displayBooks(){
+    const StoredBooks = [
+      
+      {
+      title:'Sapiens',
+      author: "Yuval Noah Harrari",
+      isbn: "1234567"
+    },
+    {
+      title:'Sapiens2',
+      author: "Yuval Noah Harrari",
+      isbn: "1234567"
+
+    }
+  ];
+  }
+}
+
+
+
+
+
 
 
 // Storage class: Handles Storage
