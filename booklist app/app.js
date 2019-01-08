@@ -35,12 +35,13 @@ class UI{
   const books = StoredBooks;
 
   books.forEach((book) => UI.addBookToList(book));
-
   }
+
   static addBookToList(book){
     const  list = document.querySelector('#book-list');
 
     const row = document.createElement('tr');
+    
     row.innerHTML = 
     `<td>${book.title}</td>
     <td>${book.author}</td>
@@ -49,7 +50,7 @@ class UI{
     delete">X</a></td>
     `;
 
-    list.appendChild('row');
+    list.appendChild(row);
   }
 
 }
@@ -57,14 +58,11 @@ class UI{
 
 
 
-
-
-
 // Storage class: Handles Storage
 
 
-// Eevent: Displays Book
-
+// Event: Displays Book
+  document.addEventListener('DOMContentLoaded', UI.displayBooks);
 
 // Event: Add a Book
 
