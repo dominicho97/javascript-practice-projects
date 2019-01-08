@@ -18,3 +18,4 @@ projects I make to learn javascript on my own.
 
 2019-01-08
 6 Weight converter
+7 Booklist app
