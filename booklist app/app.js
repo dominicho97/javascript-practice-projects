@@ -66,6 +66,22 @@ class UI{
 
 // Event: Add a Book
 
+document.querySelector('#book-form').addEventListener('submit', (e)
+ => {
+   // prevent actual submit 
+   e.preventDefault();
+  //Get form values
+  const title= document.querySelector('#title').Value;
+  const title= document.querySelector('#author').Value;
+  const title= document.querySelector('#isbn').Value;
+});
+
+
+
+//instatiate book
+const book = new Book (title,author,isbn);
+
+
 
 
 // Event: Remove a Book
