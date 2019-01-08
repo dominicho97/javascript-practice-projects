@@ -68,7 +68,7 @@ class UI{
     const form = document.querySelector('#book-form');
     container.insertBefore(div, form);
     //vanish in 3 seconds
-    setTimeout(() => document.querySelector('.alert').remove(),3000)
+    setTimeout(() => document.querySelector('.alert').remove(),3000);
 
 
 
@@ -110,6 +110,10 @@ document.querySelector('#book-form').addEventListener('submit', (e)
 
   // Add book to UI
     UI.addBookToList(book);
+
+
+    //show succes message
+    UI.showAlert('Book added', 'succes ');
 
     // clear fields
     UI.clearfield();
