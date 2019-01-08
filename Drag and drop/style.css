@@ -25,3 +25,14 @@ cursor: pointer;
   background: white;
 
 }
+
+
+.hovered{
+  border:solid #ccc 4px;
+  border-style:dashed;
+}
+
+.invisible{
+display: none;
+}
+
