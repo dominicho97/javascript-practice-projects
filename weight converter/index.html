@@ -15,6 +15,12 @@
   <style>
   body{
     margin-top: 70px;
+    background-color: #333;
+    color: white;
+    
+  }
+  h4{
+    text-align: center;
   }
 
   </style>
@@ -23,21 +29,41 @@
 
 <body>
    
-<div class="containter">
-
+<div class="container">
   <div class="row">
     <div class="col-md-6">
       <h1 class="display-4 text-center"> Weight Converter</h1>
-    </div>
     <form>
       <div class="form-group">
+
         <input type="number"
+        id="lbsInput"
         class="form-control form-control-lg"
         placeholder = "Enter Pounds...">
-
-
       </div>
     </form>
+
+    <div id="output">
+      <div class="card">
+        <div class="card-block">
+          <h4>Grams</h4>
+          <div id="gramsOutput"></div>
+          
+        <div class="card">
+          <div class="card-block">
+            <h4>Kilograms</h4>
+              <div id="kgOutput"></div>
+
+              <div class="card">
+                  <div class="card-block">
+                    <h4>Ounces/h4>
+                    <div id="ounceOutput"></div>
+                    
+                
+
+        </div>
+      </div>
+    </div>
 
 
 
