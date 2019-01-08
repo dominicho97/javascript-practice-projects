@@ -80,12 +80,32 @@ class UI{
       document.querySelector('#isbn').value = "";
       
     }
-}
+  }
 
 
 // Storage class: Handles Storage
 
+class Store {
+  static getBooks() {
+    let books;
+    if(localStorage.getItem('books') === null) {
+      books = [];
+    } else {
+      books = JSON.parse(localStorage.getItem('books'));
+    }
 
+    return books;
+  }
+
+  static addBook(book) {
+    const books = Store.getBooks();
+    books.push(book);
+    localStorage.setItem('books', JSON.stringify(books));
+  }
+}
+  
+
+  
 // Event: Displays Book
   document.addEventListener('DOMContentLoaded', UI.displayBooks);
 
@@ -112,18 +132,21 @@ document.querySelector('#book-form').addEventListener('submit', (e)
     UI.addBookToList(book);
 
 
-    //show succes message
-    UI.showAlert('Book added', 'succes ');
-
+    
     // clear fields
     UI.clearfield();
   }
 });
 
 
-// Event: Remove a Book
-document.querySelector('#book-list').addEventListener('click', (e)
-=>{
-  UI.deletedBook(e.target)
+    // Event: Remove a Book
+    document.querySelector('#book-list').addEventListener('click', (e)
+      =>{
+      UI.deletedBook(e.target)
+
+
+    //show succes message
+    UI.showAlert('Book Removed', 'succes ');
+
 
 });
