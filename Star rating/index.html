@@ -71,12 +71,25 @@
 
   // initial ratings
   const ratings = {
-    samsung = 4.8,
-    sony = 4.5,
-    visio = 3.7,
-    panasonic = 4.2,
-    phillips = 4.0,
+    samsung:  4.8,
+    sony: 4.5,
+    visio:  3.7,
+    panasonic:  4.2,
+    phillips:  4.0
+  };
 
+  // total stars
+  const starsTotal = 5;
+
+  // run getRatings when DOM loads
+  document.addEventListener('DOMContentLoaded', getRatings);
+
+  //get ratings
+  function getRatings(){
+    for(let rating in ratings){
+      // get percentage
+      const starPercentage = (ratings[rating]/ starsTotal) * 100;
+    }
   }
  
 
