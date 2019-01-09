@@ -45,9 +45,20 @@
   <div class="container mt-5">
     <div class="form-group">
       <select id="product-select" class="form-control
-       custom-select"></select>
-
+       custom-select">
+      <option value="0" disabled selected>Select Product</option>
+      <option value="sony">Sony 4K TV</option>
+      <option value="samsung">Samsung 4K TV</option>
+      <option value="vizio">Vizio 4K TV</option>
+      <option value="panasonic">Panasonic 4K TV</option>
+      <option value="phillips">Phillips 4K TV</option>
+    </select>
     </div>
+    <div class="form-group">
+      <input type="number" id="rating-control" class="form-control" step="0,1" max="5" 
+      placeholder="Rate 1 - 5 " disabled>
+    </div>
+
     <table class="table table-striped">
       <thead>
       <tr>
@@ -128,12 +139,12 @@
     const starPercentage = (ratings[rating]/ starsTotal) * 100;
 
 
-      // round to nearest 10
-      const starPercentageRounded = `${Math.round(starPercentage/ 10) * 10}%`
+  // round to nearest 10
+  const starPercentageRounded = `${Math.round(starPercentage/ 10) * 10}%`
 
 
-      // set width of stars-inner to percentage
-      document.querySelector(`${rating}.stars-inner`).style.width = starPercentageRounded;
+  // set width of stars-inner to percentage
+  document.querySelector(`${rating}.stars-inner`).style.width = starPercentageRounded;
     }
   }
  
