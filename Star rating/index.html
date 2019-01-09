@@ -134,8 +134,14 @@
 
   // form elements
   const productSelect = document.getElementById('product-select');
-    const ratingControl = document.getElementById('rating-control');
+  const ratingControl = document.getElementById('rating-control');
 
+  //init product
+   let product;
+
+  // product select change
+  productSelect.addEventListener('change', (e) => {
+      product = e.target.value;
 
   //get ratings
   function getRatings(){
