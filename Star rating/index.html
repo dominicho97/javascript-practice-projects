@@ -27,6 +27,14 @@
   font-weight: 900;
   color: #ccc;
 }
+
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #f8ce0b;
+}
+
   
   </style>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -34,7 +42,12 @@
   
 </head>
 <body>
-  <div class="container">
+  <div class="container mt-5">
+    <div class="form-group">
+      <select id="product-select" class="form-control
+       custom-select"></select>
+
+    </div>
     <table class="table table-striped">
       <thead>
       <tr>
@@ -94,12 +107,12 @@
 <script>
 
   // initial ratings
-  const ratings = {
-    samsung:  4.8,
-    sony: 4.5,
-    visio:  3.7,
-    panasonic:  4.2,
-    phillips:  4.0
+    const ratings = {
+      sony: 4.7,
+      samsung: 3.4,
+      vizio: 2.3,
+      panasonic: 3.6,
+      phillips: 4.1
   };
 
   // total stars
@@ -120,7 +133,7 @@
 
 
       // set width of stars-inner to percentage
-      document.querySelector(`${rating}`)
+      document.querySelector(`${rating}.stars-inner`).style.width = starPercentageRounded;
     }
   }
  
