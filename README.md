@@ -21,3 +21,4 @@ projects I make to learn javascript on my own.
 
 2019-01-09
 9 Star rating
+10 Modal
