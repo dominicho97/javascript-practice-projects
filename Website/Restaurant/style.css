@@ -1,0 +1,31 @@
+.button1 {
+  align-content: center;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.jumbotron {
+  height: 600px;
+  background-image: url("image/background2.jpg");
+  background-size: 100%;
+  color: white;
+}
+
+.header-h {
+  color: #ffb03b;
+  font-size: 46px;
+  font-family: "Satisfy", sans-serif;
+  font-weight: 300;
+}
+.header-p {
+  color: #9699a6;
+  font-size: 16px;
+}
+
+.title2 {
+  position: relative;
+  left: 400px;
+}
