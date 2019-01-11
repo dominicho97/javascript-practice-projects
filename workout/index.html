@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center mt-5"><h1>Routine</h1></div>
+      </div>
+    </div>
+
+    <div class="row text-center mt-5">
+      <div class="col">
+        <button onclick="routine1" id="button1">Fullbody</button>
+      </div>
+      <div class="col">
+        <button id="button2" onclick="routine2">Upper-lower</button>
+      </div>
+      <div class="col">
+        <button id="button3" onclick="routine2">Push-Pull-Legs</button>
+      </div>
+    </div>
+
+    <script>
+      // get DOM elements
+      const button1 = document.querySelector("#button1");
+      const button2 = document.querySelector("#button2");
+      const button3 = document.getElementById("#button3");
+
+      //events
+      button1.addEventListener("click", btnpushed1);
+      button2.addEventListener("click", btnpushed2);
+      button3.addEventListener("click", btnpushed3);
+
+      //functiion
+      function btnpushed1() {}
+    </script>
+  </body>
+</html>
