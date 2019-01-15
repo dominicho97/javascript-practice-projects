@@ -8,10 +8,57 @@
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center mt-5"><h1>Routine</h1></div>
@@ -30,71 +77,6 @@
       </div>
     </div>
 
-    <button id="myButton" class="float-left submit-button">Home</button>
-
-    <div class="container">
-      <h2>Accordion Example</h2>
-      <p>
-        <strong>Note:</strong> The <strong>data-parent</strong> attribute makes
-        sure that all collapsible elements under the specified parent will be
-        closed when one of the collapsible item is shown.
-      </p>
-      <div id="accordion">
-        <div class="card">
-          <div class="card-header">
-            <a class="card-link" data-toggle="collapse" href="#collapseOne">
-              Collapsible Group Item #1
-            </a>
-          </div>
-          <div id="collapseOne" class="collapse show" data-parent="#accordion">
-            <div class="card-body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <a
-              class="collapsed card-link"
-              data-toggle="collapse"
-              href="#collapseTwo"
-            >
-              Collapsible Group Item #2
-            </a>
-          </div>
-          <div id="collapseTwo" class="collapse" data-parent="#accordion">
-            <div class="card-body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <a
-              class="collapsed card-link"
-              data-toggle="collapse"
-              href="#collapseThree"
-            >
-              Collapsible Group Item #3
-            </a>
-          </div>
-          <div id="collapseThree" class="collapse" data-parent="#accordion">
-            <div class="card-body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <script>
       // get DOM elements
       const button1 = document.querySelector("#button1");
