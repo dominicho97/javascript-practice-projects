@@ -25,3 +25,6 @@ projects I make to learn javascript on my own.
 
 2019-01-10
 11 Website (bootstrap)
+
+2019-01-11
+12 Workout 
