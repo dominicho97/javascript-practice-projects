@@ -1,6 +1,6 @@
 # javascript-practice-projects
 
-projects I make to learn javascript on my own.
+projects I make to learn javascript on my own in my leisure time, most projects can be found on youtube.
 
 2019-01-04
 1 Calculator
@@ -27,4 +27,7 @@ projects I make to learn javascript on my own.
 11 Website (bootstrap)
 
 2019-01-11
-12 Workout 
+12 Workout (unfinished)
+
+2019--01-11
+13 Github finder app
